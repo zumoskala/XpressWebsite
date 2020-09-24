@@ -1,0 +1,111 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    font-family: "Roboto Light";
+}
+
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
+
+header {
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/263922-P4T48N-660.jpg");
+    background-size: cover;
+}
+
+.header-text {
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.header-text-main {
+    display: block;
+    font-size: 6rem;
+    letter-spacing: 3.1rem;
+    margin-right: -3.1rem;
+}
+
+.header-text-secondary {
+    display: block;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    margin-top: 0.5rem;
+}
+
+.header-text button {
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    border: solid #BF4E22;
+    background-color: #BF4E22;
+    color: #ffffff;
+    border-radius: 2rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.header-text button:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.header-text button:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn--animated {
+    animation-name: moveInBottom;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-delay: .75s;
+    animation-fill-mode: backwards; /*it automatically applies styles of 0% before animation starts*/
+}
+
+.header-text button:focus {
+    outline: 0;
+}
+
+.navigation {
+    width: 100%;
+    display: inline-block;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.navigation li {
+    color: #ffffff;
+    font-size: 1.1rem;
+    float: right;
+    padding: 2%;
+    text-decoration: none;
+    text-transform: uppercase;
+}
