@@ -5,15 +5,16 @@
     <title>Xpress</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="grid.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>
     <div class="logo">LOGO</div>
     <ul class="main-nav">
-        <li><p id="scrToAboutUs" onclick="scrollToElt(this.id);">o nas</p></li>
+        <li><p id="scrToAboutUs" onclick="scrollToElt(this.id);">o xpress</p></li>
         <li><p id="scrToHowItWorks" onclick="scrollToElt(this.id);">jak to działa</p></li>
-        <li><p id="scrToWhy" onclick="scrollToElt(this.id);">dlaczego xpress</p></li>
+        <li><p id="scrToWhy" onclick="scrollToElt(this.id);">użytkownicy</p></li>
         <li><p id="scrToContact" onclick="scrollToElt(this.id);">kontakt</p></li>
     </ul>
 
@@ -30,12 +31,14 @@
 <div id="aboutUs" class="section__about-us">
 
     <div class="content-column">
-        <h2>O nas</h2>
+        <h2>Czym jest Xpress?</h2>
         <div class="row">
             <p class="col span-3-of-5 about-us-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco
+                laboris nisi ut aliquip ex ea <span class="text-important"> commodo consequat</span>.
+                Duis aute irure
+                dolor in reprehenderit in voluptate
                 velit
                 esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                 culpa
@@ -43,17 +46,14 @@
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
                 rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
                 explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque <span
+                        class="text-important">porro quisquam </span> est, qui
                 dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
                 incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-            <img src="images/working.jpg" class="span-2-of-5 team-working"
-                 alt="Picture of an Xpress team working together.">
-            <img src="images/team.jpg" class="span-2-of-5 team-integration"
+            <img src="images/working.jpg" class="span-2-of-5 team-integration box-shadow"
                  alt="Picture of an Xpress team integrating together.">
         </div>
-
     </div>
-
 </div>
 
 <div id="howItWorks" class="section__how-it-works">
@@ -68,7 +68,49 @@
 
 <div id="whyXpress" class="section__why-xpress">
     <div class="content-column">
-        <h2>Dlaczego Xpress</h2>
+        <h2>Użytkownicy Xpress</h2>
+        <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+            rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+            explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        <div class="row-testimonials">
+            <div class="span-1-of-3 user-testimonials">
+                <div class="user-testimonials-box box-shadow">
+                    <img class="user-testimonials-photo"  src="images/user-1.jpg">
+                    <h3>Imię nazwisko</h3>
+                    <p class="user-testimonials-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium, totam
+                        rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                        sunt
+                        explicabo.</p>
+                    <a href="#">Poznaj jego historię &rarr; </a>
+                </div>
+            </div>
+            <div class="span-1-of-3 user-testimonials">
+                <div class="user-testimonials-box box-shadow">
+                    <img class="user-testimonials-photo" src="images/user-2.jpg">
+                    <h3>Imię nazwisko</h3>
+                    <p class="user-testimonials-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium, totam
+                        rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                        sunt
+                        explicabo.</p>
+                    <a href="#">Poznaj jej historię &rarr; </a>
+                </div>
+            </div>
+            <div class="span-1-of-3 user-testimonials">
+                <div class="user-testimonials-box box-shadow">
+                    <img class="user-testimonials-photo"  src="images/user-3.jpg">
+                    <h3>Imię nazwisko</h3>
+                    <p class="user-testimonials-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium, totam
+                        rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                        sunt
+                        explicabo.</p>
+                    <a href="#">Poznaj jego historię &rarr; </a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
